@@ -105,23 +105,20 @@ module.exports = {
         ],
       }
     },
-    // Add fonts here (https://github.com/SirPole/google-fonts-plugin - for options)
-    // Will automatically swap them (package - https://www.gatsbyjs.org/packages/gatsby-plugin-google-analytics/ )
-    // {
-    //   resolve: `gatsby-plugin-prefetch-google-fonts`,
-    //   options: {
-    //     fonts: [
-    //       {
-    //         family: `Oswald`,
-    //         subsets: [`latin`],
-    //       },
-    //       {
-    //         family: `Open Sans`,
-    //         variants: [`400`, `700`]
-    //       },
-    //     ],
-    //   },
-    // },
+    'gatsby-plugin-readingtime-contentful',
+    {
+      resolve: `gatsby-plugin-webfonts`,
+      options: {
+        fonts: {
+          google: [
+            {
+              family: "Roboto",
+              variants: ["400", "700"],
+            },
+          ],
+        },
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

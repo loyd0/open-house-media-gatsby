@@ -4,6 +4,21 @@
 
 Make sure you have the gatsby cli installed 
 
+
+
+# Changes
+
+## 01/12/2020
+* Added React Share and default component
+    * Docs here  `https://github.com/nygardk/react-share`
+* Added Twitter comment component
+* Updated LinkedComponent
+* Added FontAwesomeBrands 
+* Added reading time plugin `https://www.gatsbyjs.com/plugins/gatsby-plugin-readingtime-contentful/?=reading%20time`
+* Updated to Gatsby Plugin Webfonts, old one was unreliable - 
+    * docs here -> `https://www.gatsbyjs.com/plugins/gatsby-plugin-webfonts/`
+
+
 # Features
 
 * TailwindCSS (Updated to V2)
