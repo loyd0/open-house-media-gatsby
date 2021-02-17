@@ -8,6 +8,9 @@ Make sure you have the gatsby cli installed
 
 # Changes
 
+## 17/02/21
+* Updated tailwindcss implementation 
+
 ## 01/12/2020
 * Added React Share and default component
     * Docs here  `https://github.com/nygardk/react-share`

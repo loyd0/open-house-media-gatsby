@@ -1,5 +1,11 @@
 import React from 'react'
 
+
+
+// To Do: update Rich Text to new form 
+// https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-source-contentful/CHANGELOG.md#400-next0-2020-11-09
+
+
 import { BLOCKS, MARKS, INLINES } from "@contentful/rich-text-types"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import LinkTo from '../components/LinkTo'

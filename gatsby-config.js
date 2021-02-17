@@ -61,28 +61,8 @@ module.exports = {
       // }
     },
     {
-      resolve: `gatsby-plugin-postcss`,
-      options: {
-        postCssPlugins: [
-          require("tailwindcss"), // CSS Framework
-          require("autoprefixer"), // Browser Prefixes
-          require(`cssnano`)({ // Minify CSS
-            preset: `default`
-          })]
-      }
+      resolve: `gatsby-plugin-postcss`
     },
-    // {
-    //   resolve: `gatsby-plugin-purgecss`,
-    //   options: {
-    //     printRejected: true, // Print removed selectors and processed file names
-    //     develop: false, // Enable while using `gatsby develop`
-    //     tailwind: true, // Enable tailwindcss support
-    //     // whitelist: ['.article'], // Don't remove this selector
-    //     ignore: ['src/css/custom/'], // Ignore files/folders
-    //     // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
-    //   }
-    // },
-
     // Uncomment to add in contentful
     // {
     //   resolve: `gatsby-source-contentful`,
