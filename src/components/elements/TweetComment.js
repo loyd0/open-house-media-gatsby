@@ -1,5 +1,6 @@
 import React from 'react'
 import PrettyLink from './PrettyLink';
+import Linked from './Linked';
 
 export default function TweetComment() {
 
@@ -15,7 +16,7 @@ export default function TweetComment() {
                 placeholder="Add your comment here"
                 className="w-full bg-gray-200 rounded border-primary" 
                 rows="4"/> 
-            <PrettyLink  linkTo={`https://twitter.com/intent/tweet?text=${encodeURIComponent(`@shorequal ${comment}`)}`} >Send</PrettyLink>
+            <Linked  linkTo={`https://twitter.com/intent/tweet?text=${encodeURIComponent(`@shorequal ${comment}`)}`} >Send</Linked>
         </>
     )
 }
