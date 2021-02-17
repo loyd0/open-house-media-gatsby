@@ -10,6 +10,7 @@ Make sure you have the gatsby cli installed
 
 ## 17/02/21
 * Updated tailwindcss implementation 
+* Update useBodyLock to implement auto no scroll
 
 ## 01/12/2020
 * Added React Share and default component
