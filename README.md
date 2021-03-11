@@ -13,6 +13,9 @@ Make sure you have the gatsby cli installed
 * Updated to Gatsby V3.0
 * Added new [gatsby-plugin-image](https://www.gatsbyjs.com/plugins/gatsby-plugin-image)
 * Removed the depreciated gatsby-image
+* Updated relevant packages for V3.0
+* Updated React
+* Major package bump
 
 ## 17/02/21
 * Updated tailwindcss implementation 
