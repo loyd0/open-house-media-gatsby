@@ -8,6 +8,12 @@ Make sure you have the gatsby cli installed
 
 # Changes
 
+## 11/03/21
+* Added in `postcss.config` which was missing for TailwindCSS implementation
+* Updated to Gatsby V3.0
+* Added new [gatsby-plugin-image](https://www.gatsbyjs.com/plugins/gatsby-plugin-image)
+* Removed the depreciated gatsby-image
+
 ## 17/02/21
 * Updated tailwindcss implementation 
 * Update useBodyLock to implement auto no scroll
