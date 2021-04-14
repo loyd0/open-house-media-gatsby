@@ -32,11 +32,11 @@ function SEO({ description, lang, meta, title, image, article, twitterUsername }
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      // titleTemplate={`%s | ${site.siteMetadata.title}`}
     >
-      <noscript>Your browser does not support JavaScript! A London List works best with javascript ( and by best only ). </noscript>     
+      <noscript>Your browser does not support JavaScript! This site works best with javascript ( and by best only ). </noscript>     
 
-     <meta name="description" content={metaDescription} />
+      <meta name="description" content={metaDescription} />
       <meta name="image" content={metaImage} />
 
       {/* Facebook */}
