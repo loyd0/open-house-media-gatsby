@@ -6,6 +6,10 @@ Make sure you have the gatsby cli installed
 
 # Changes
 
+## 07/05/21
+- Fixed an error in the SEO page where the images from contentful wouldn't display as twitter cards properly
+- Added a path option for when linking to sub pages for correct links passed to meta / social cards
+
 ## 14/04/21
 
 - Added example `gatsby-node.js` files

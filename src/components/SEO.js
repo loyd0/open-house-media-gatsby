@@ -4,7 +4,7 @@ import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 // import logo from "../images/site/seo-logo.svg"
 
-function SEO({ description, lang, meta, title, image, article, twitterUsername }) {
+function SEO({ description, lang, meta, path, title, image, article, twitterUsername }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -21,7 +21,9 @@ function SEO({ description, lang, meta, title, image, article, twitterUsername }
   )
 
   const metaDescription = description || site.siteMetadata.description
-  // const metaImage = `${site.siteMetadata.siteUrl}${image ? `${image}` : logo }` // placeholder logo here
+
+  // as long as a contentful image is passed will work
+  const metaImage = `https:${image ? `${image}` : logo }` // placeholder logo here
   const metaTitle = title ? `${title} | ${site.siteMetadata.title}` : site.siteMetadata.title
 
 
@@ -40,7 +42,7 @@ function SEO({ description, lang, meta, title, image, article, twitterUsername }
       <meta name="image" content={metaImage} />
 
       {/* Facebook */}
-      <meta property="og:url" content={site.siteMetadata.siteUrl} />
+      <meta property="og:url" content={`${site.siteMetadata.siteUrl}${path && `${path}`}`} />
       <meta property="og:type" content={article ? `article` : `website`} />
       <meta property="og:title" content={metaTitle} />
       <meta property="og:description" content={metaDescription} />
