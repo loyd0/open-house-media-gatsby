@@ -3,6 +3,11 @@ module.exports = {
   mode: "JIT",
   theme: {
     extend: {
+      colors: {
+        "background": "rgb(28,27,41)",
+        "gradStart": "rgb(81,91,254)",
+        "gradFin": "rgb(29,179,254)",
+      },
       opacity: {
         "10": "0.1",
         "20": "0.2",
@@ -70,14 +75,14 @@ module.exports = {
         "-1/2": "-50%",
         "-1/4": "-25%",
         "-3/4": "-75%",
-        "-full": "-100%"
+        "-full": "-100%",
       },
       fontSize: {
-        '7xl': "4.5rem",
-        '8xl': "5rem",
-        '9xl': "5.5rem",
-        '10xl': "6rem",
-        '11xl': "6.5rem"
+        "7xl": "4.5rem",
+        "8xl": "5rem",
+        "9xl": "5.5rem",
+        "10xl": "6rem",
+        "11xl": "6.5rem",
       },
       maxHeight: {
         "1/2": "50vh",
@@ -85,12 +90,12 @@ module.exports = {
         "2/3": "66.66vh",
         "1/4": "25vh",
         "3/4": "75vh",
-        "none": "none"
+        "none": "none",
       },
       maxWidth: {
         "xxs": "14rem",
         "screen-2xl": "1350px",
-        "content": "max-content"
+        "content": "max-content",
       },
       minWidth: {
         "xxxs": "12rem",
@@ -112,13 +117,13 @@ module.exports = {
       },
       zIndex: {
         "front": 99999,
-        "back": -99999
-      }
-    }
+        "back": -99999,
+      },
+    },
   },
   plugins: [
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/typography'),
-    require('@tailwindcss/aspect-ratio'),
-  ]
+    require("@tailwindcss/forms"),
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/aspect-ratio"),
+  ],
 }
