@@ -6,6 +6,12 @@ Make sure you have the gatsby cli installed
 
 # Changes
 
+## 20/10/21
+- Commented out breaking graphql queries
+- Updated to Tailwind JIT mode
+- Updated all packages
+- Fixed some warnings in console on development 
+
 ## 07/05/21
 - Fixed an error in the SEO page where the images from contentful wouldn't display as twitter cards properly
 - Added a path option for when linking to sub pages for correct links passed to meta / social cards
