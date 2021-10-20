@@ -33,15 +33,15 @@ module.exports = {
     siteUrl
   },
   plugins: [
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        // trackingId: "UA-111111111-1", // add your own tracking code
-        // this option places the tracking script into the head of the DOM
-        head: true,
-        // other options
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     // trackingId: "UA-111111111-1", // add your own tracking code
+    //     // this option places the tracking script into the head of the DOM
+    //     head: true,
+    //     // other options
+    //   },
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

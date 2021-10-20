@@ -1,5 +1,6 @@
 module.exports = {
-  purge: ["./src/**/*.js", "./src/**/*.jsx", "./src/**/*.ts", "./src/**/*.tsx" ],
+  purge: ["./src/**/*.{js,jsx,ts,tsx}"],
+  mode: "JIT",
   theme: {
     extend: {
       opacity: {
@@ -13,9 +14,6 @@ module.exports = {
         "80": "0.8",
         "90": "0.9",
         "95": "0.95",
-      },
-      minHeight: {
-        "800": "800px",
       },
       spacing: {
         "9": "2.25rem",
@@ -116,16 +114,6 @@ module.exports = {
         "front": 99999,
         "back": -99999
       }
-    }
-  },
-  variants: {
-    extend: {
-      backgroundColor: ['group-focus', 'active'],
-      borderColor: ['group-focus'],
-      boxShadow: ['group-focus'],
-      opacity: ['group-focus'],
-      textColor: ['group-focus', 'active'],
-      textDecoration: ['group-focus'],
     }
   },
   plugins: [
