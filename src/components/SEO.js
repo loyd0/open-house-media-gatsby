@@ -23,7 +23,7 @@ function SEO({ description, lang, meta, path, title, image, article, twitterUser
   const metaDescription = description || site.siteMetadata.description
 
   // as long as a contentful image is passed will work
-  const metaImage = `https:${image ? `${image}` : logo }` // placeholder logo here
+  // const metaImage = `https:${image ? `${image}` : logo }` // placeholder logo here
   const metaTitle = title ? `${title} | ${site.siteMetadata.title}` : site.siteMetadata.title
 
 

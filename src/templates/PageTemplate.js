@@ -57,50 +57,50 @@ const PageTemplate = ({ data: { contentfulPage } }) => {
 }
 
 
-export const PageTemplateQuery = graphql`
-query PageTemplateQuery($id: String) {
-  contentfulPage(contentful_id: {eq: $id}) {
-    id
-    title
-    slug
-    metaTitle
-    metaImage {
-      fixed(width: 400) {
-        src
-      }
-      title
-    }
-    metaDescription {
-      text: metaDescription
-    }
-    sections {
-      ... on ContentfulThreeCardsSection {
-        ...ContentfulThreeCardsSectionFragment
-      }
-      ... on ContentfulHeroSection {
-        ...ContentfulHeroSectionFragment
-      }
-      ... on ContentfulCollectionSection {
-        ...ContentfulCollectionSectionFragment
-      }
-      ... on ContentfulCarouselSection {
-        ...ContentfulCarouselSectionFragment
-      }
-      ... on ContentfulSocialSection {
-        ...ContentfulSocialSectionFragment
-      }
-      ... on ContentfulTwoColumnSection {
-        ...ContentfulTwoColumnSectionFragment
-      }
-      ... on ContentfulTextSection {
-        ...ContentfulTextSectionFragment
-      }
-      ... on ContentfulSpacerSection {
-        ...ContentfulSpacerSectionFragment
-      }
-    }
-  }
-}
-`
+// export const PageTemplateQuery = graphql`
+// query PageTemplateQuery($id: String) {
+//   contentfulPage(contentful_id: {eq: $id}) {
+//     id
+//     title
+//     slug
+//     metaTitle
+//     metaImage {
+//       fixed(width: 400) {
+//         src
+//       }
+//       title
+//     }
+//     metaDescription {
+//       text: metaDescription
+//     }
+//     sections {
+//       ... on ContentfulThreeCardsSection {
+//         ...ContentfulThreeCardsSectionFragment
+//       }
+//       ... on ContentfulHeroSection {
+//         ...ContentfulHeroSectionFragment
+//       }
+//       ... on ContentfulCollectionSection {
+//         ...ContentfulCollectionSectionFragment
+//       }
+//       ... on ContentfulCarouselSection {
+//         ...ContentfulCarouselSectionFragment
+//       }
+//       ... on ContentfulSocialSection {
+//         ...ContentfulSocialSectionFragment
+//       }
+//       ... on ContentfulTwoColumnSection {
+//         ...ContentfulTwoColumnSectionFragment
+//       }
+//       ... on ContentfulTextSection {
+//         ...ContentfulTextSectionFragment
+//       }
+//       ... on ContentfulSpacerSection {
+//         ...ContentfulSpacerSectionFragment
+//       }
+//     }
+//   }
+// }
+// `
 
 export default PageTemplate

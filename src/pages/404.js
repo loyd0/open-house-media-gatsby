@@ -1,11 +1,11 @@
 import React from "react"
 import Layout from "../components/layout/Layout"
-import SEO from "../components/SEO"
+import Seo from "../components/SEO"
 import Linked from '../components/elements/Linked';
 
 const NotFoundPage = () => (
   <>
-  <SEO title="Oops nothing there" />
+  <Seo title="Oops nothing there" />
   <Layout>
     <section id="404" className="flex flex-col text-center justify-center px-8 min-h-screen -mt-24" >
       <h1>¯\_(ツ)_/¯</h1>

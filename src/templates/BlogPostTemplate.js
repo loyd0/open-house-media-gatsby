@@ -74,62 +74,62 @@ const BlogPostTemplate = ({ data: { contentfulBlogPost } }) => {
 
 
 
-export const BlogPostQuery = graphql`
-query BlogPostQuery($id: String) {
-  contentfulBlogPost(contentful_id: {eq: $id}) {
-    title
-    slug
-    metaTitle
-    metaImage {
-      fixed(width: 400) {
-        src
-      }
-      title
-    }
-    metaDescription {
-      text: metaDescription
-    }
-    author
-    datePosted(formatString: "Do MMMM YYYY")
-    mainImage {
-      gatsbyImageData(
-        layout: CONSTRAINED
-        quality: 90
-        width: 800
-        placeholder: BLURRED
-      )
-      title
-    }
-    category
-    body {
-      raw
-      references {
-        ... on ContentfulAsset {
-          contentful_id
-          internal {
-            type
-          }
-          gatsbyImageData(
-            placeholder: BLURRED
-            width: 800
-            layout: CONSTRAINED
-            quality: 90
-          )
-          title
-        }
-        ... on ContentfulVideo {
-          contentful_id
-          internal {
-            type
-          }
-          name
-          type
-          videoId
-        }
-      }
-    }
-  }
-}
-`
+// export const BlogPostQuery = graphql`
+// query BlogPostQuery($id: String) {
+//   contentfulBlogPost(contentful_id: {eq: $id}) {
+//     title
+//     slug
+//     metaTitle
+//     metaImage {
+//       fixed(width: 400) {
+//         src
+//       }
+//       title
+//     }
+//     metaDescription {
+//       text: metaDescription
+//     }
+//     author
+//     datePosted(formatString: "Do MMMM YYYY")
+//     mainImage {
+//       gatsbyImageData(
+//         layout: CONSTRAINED
+//         quality: 90
+//         width: 800
+//         placeholder: BLURRED
+//       )
+//       title
+//     }
+//     category
+//     body {
+//       raw
+//       references {
+//         ... on ContentfulAsset {
+//           contentful_id
+//           internal {
+//             type
+//           }
+//           gatsbyImageData(
+//             placeholder: BLURRED
+//             width: 800
+//             layout: CONSTRAINED
+//             quality: 90
+//           )
+//           title
+//         }
+//         ... on ContentfulVideo {
+//           contentful_id
+//           internal {
+//             type
+//           }
+//           name
+//           type
+//           videoId
+//         }
+//       }
+//     }
+//   }
+// }
+// `
 
 export default BlogPostTemplate

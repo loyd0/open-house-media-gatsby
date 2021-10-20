@@ -21,36 +21,36 @@ const Nav = (props) => {
     UseBodyLock(menuOpen)
 
 
-    const { contentfulSiteSettings } = useStaticQuery(graphql`
-    query NavBarQuery {
-        contentfulSiteSettings {
-            navBar {
-            ... on ContentfulPage {
-                id
-                slug
-                title
-            }
-            ... on ContentfulSubMenu {
-                id
-                header
-                menuItems {
-                    title
-                    slug
-                }
-            }
-            ... on ContentfulLink {
-                id
-                linkTo
-                text
-                }
-            }
-            siteName
-            navLogo {
-                gatsbyImageData(width: 100, layout: FIXED, placeholder: TRACED_SVG, quality: 90)
-            }
-        }
-        }
-    `)
+    // const { contentfulSiteSettings } = useStaticQuery(graphql`
+    // query NavBarQuery {
+    //     contentfulSiteSettings {
+    //         navBar {
+    //         ... on ContentfulPage {
+    //             id
+    //             slug
+    //             title
+    //         }
+    //         ... on ContentfulSubMenu {
+    //             id
+    //             header
+    //             menuItems {
+    //                 title
+    //                 slug
+    //             }
+    //         }
+    //         ... on ContentfulLink {
+    //             id
+    //             linkTo
+    //             text
+    //             }
+    //         }
+    //         siteName
+    //         navLogo {
+    //             gatsbyImageData(width: 100, layout: FIXED, placeholder: TRACED_SVG, quality: 90)
+    //         }
+    //     }
+    //     }
+    // `)
 
     const { navBar, navLogo } = contentfulSiteSettings
 
