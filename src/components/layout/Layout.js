@@ -12,10 +12,10 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <header className="bg-gray-100">
+      <header className="">
         <Nav />
       </header>
-      <main className="min-h-screen bg-gray-100 leading-loose font-thin ">
+      <main className="">
         {children}
       </main>
       <Footer />

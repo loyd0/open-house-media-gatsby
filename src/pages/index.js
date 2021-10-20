@@ -6,6 +6,7 @@ const IndexPage = () => (
   <>
   <Seo title="Home" />
   <Layout>
+    Content
       {/* Content goes here */}
   </Layout>
   </>
