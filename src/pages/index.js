@@ -4,7 +4,39 @@ import Seo from "../components/SEO"
 import { StaticImage } from "gatsby-plugin-image"
 import Button from "../components/elements/Button"
 import ButtonGroup from "../components/elements/compounds/ButtonGroup"
-import Carousel from "../components/elements/Carousel"
+// import Carousel from "../components/elements/Carousel"
+
+const FAQ = [{
+  title: "But isn't email marketing dead?",
+  description: "Absolutely not. Email is up to 6x more likely to get clicks than a FB ad when shown to the same amount of people. " +
+    "Email is an industry that grows year over year. P.s. according to Marketing Sherpa, " +
+    "72% of people prefer receiving promotions through email, compared to 17% who prefer social media.",
+}, {
+  title: "Will I have any responsibilities?",
+  description: "Once you get onboarded with us, all we ask of you is to add us as a staff" +
+    " on your Shopify (or whatever platform you use) provide us with your" +
+    " brands content, and we'll take over from there.",
+}, {
+  title: "How long does it take to make profits?",
+  description: "If we've determined that your a good fit for us, allow us at least 7-14 days to fully " +
+    "implement everything you need to succeed and you should see profits start " +
+    "rolling in within the first 30 days.",
+}, {
+  title: "How much control do I have?",
+  description: "As much as you'd like, although we highly recommend letting our team get to work without " +
+    "much back and forth for maximum speed and efficiency. Trust us and let our team with a combined experience of " +
+    "15+ years take over so you can focus on what you're good at and let the profits roll in on autopilot.",
+}, {
+  title: "Why is there a set up fee?",
+  description: "We require a minor set up fee to make sure our expert level graphic" +
+    " design team gets paid, and paid well. If you want to work with another agency who doesn't require a set up fee we," +
+    " guarantee their quality of work will show for it and you'll come crawling right back to us. So you may as well just get it done properly the first time around.",
+}, {
+  title: "What if I don't get results?",
+  description: "First of all, this hardly ever happens because we simply won't work with you if we don't see potential growth for your business through email. But if we don't at the very minimum 1.5x your investment we'll" +
+    " refund you the full amount. Don't let this scare you though, on average " +
+    "we 6-12x our clients investments almost every single time.",
+}]
 
 
 const autoPilots = [{
@@ -31,13 +63,13 @@ const autoPilots = [{
     "This skyrockets your CTR'S and conversions meaning more $.",
 }, {
   logo: "../images/emailAuto.png",
-  title: "Account Optimzation\n",
+  title: "Account Optimzation",
   description: "We perform A/B split tests on every email on a weekly " +
     "bases so we can continue improving, scaling, and finding" +
     " the perfect combinations your customers want to engage with.",
 }, {
   logo: "../images/emailAuto.png",
-  title: "Sms Marketing\n",
+  title: "Sms Marketing",
   description: "Along with our email services we offer sms marketing. " +
     "We mastered the art of marketing through sms over the years resulting " +
     "the best ROI's our clients have ever seen.",
@@ -61,7 +93,7 @@ const IndexPage = ({ data }) => {
           <div className={"flex flex-col w-3/5"}>
             <h3 className={"text-6xl font-bold"}>Email Marketing</h3>
             <h3 className={"text-6xl font-bold"}>For
-              <span className={"text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 to-blue-400"}>
+              <span className={"text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-400"}>
                   Ecommerce
                </span>
             </h3>
@@ -127,7 +159,7 @@ const IndexPage = ({ data }) => {
           <h3 className={"font-bold text-5xl m-0"}>Profit On
             <span
               className={"text-transparent bg-clip-text" +
-              " bg-gradient-to-br from-indigo-600 to-blue-400"}
+              " bg-gradient-to-r from-indigo-600 to-blue-400"}
             > Autopilot
           </span>
           </h3>
@@ -140,7 +172,7 @@ const IndexPage = ({ data }) => {
             <div className={"grid grid-cols-3 max-w-screen-2xl gap-4"}>{autoPilots.map((auto, index) => {
               console.log({ auto })
               return (
-                <div key={index} className={"rounded-2xl bg-gray-800 p-8 w-96"}>
+                <div key={index} className={"rounded-2xl bg-blueyGray p-8 w-96"}>
                   <div className={"flex sm:justify-center sm:items-center"}>
                     {/*image*/}
 
@@ -192,7 +224,7 @@ const IndexPage = ({ data }) => {
             <div className={"flex flex-col justify-center"}>
               <h3 className={"font-bold text-5xl m-0"}>Things We Do That</h3>
               <h3
-                className={"font-bold text-5xl  text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 to-blue-400"}>Grow
+                className={"font-bold text-5xl  text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-400"}>Grow
                 Your Business
               </h3>
               <div className={"flex flex-wrap mt-10"}>
@@ -277,7 +309,7 @@ const IndexPage = ({ data }) => {
               <h3 className={"font-bold text-5xl m-0"}>Make Profits In
               </h3>
               <h3
-                className={"font-bold text-5xl  text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 to-blue-400"}>4
+                className={"font-bold text-5xl  text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-400"}>4
                 Weeks Or Less</h3>
               <div className={"flex flex-wrap mt-10"}>
                 <p className={"w-1/2"}>When we implement our proven to perform email systems across your business -
@@ -364,97 +396,101 @@ const IndexPage = ({ data }) => {
           <h3 className={"font-bold text-5xl m-0"}>The
             <span
               className={"text-transparent bg-clip-text" +
-              " bg-gradient-to-br from-indigo-600 to-blue-400"}
+              " bg-gradient-to-r from-indigo-600 to-blue-400"}
             > Industry Leaders
           </span>
           </h3>
         </div>
         <div className={"flex justify-center  mt-10 "}>
           <div className={"flex"}>
-          <div className={"w-3/6"}>
+            <div className={"w-3/6"}>
 
 
-            <div className={"flex flex-col max-w-screen-2xl"}>
-              {/*======================== #1 ========================*/}
-              <div className={"rounded-2xl p-8 w-104"}>
-                <div className={"flex"}>
-                  <StaticImage
-                    className={"rounded-3xl"}
-                    src="../images/smileyFaceBlue.png"
-                    alt="Logo"
-                    placeholder="blurred"
-                    layout="fixed"
-                    width={50}
-                    height={50}
-                  />
+              <div className={"flex flex-col max-w-screen-2xl"}>
+                {/*======================== #1 ========================*/}
+                <div className={"rounded-2xl p-8 w-104"}>
+                  <div className={"flex"}>
+                    <StaticImage
+                      className={"rounded-3xl"}
+                      src="../images/smileyFaceBlue.png"
+                      alt="Logo"
+                      placeholder="blurred"
+                      layout="fixed"
+                      width={50}
+                      height={50}
+                    />
+                  </div>
+                  <div className={"mt-10 font-bold text-2xl"}>We Take The Stress Off You.
+                  </div>
+                  <div className={"mt-10"}>Entrepreneurs only have so much time in the day. Don't waste it trying to
+                    learn
+                    new skills & figuring out what works. Smart business owners delegate emails to the top dog agency
+                    for
+                    e-commerce, dropshipping & digital products.
+                  </div>
                 </div>
-                <div className={"mt-10 font-bold text-2xl"}>We Take The Stress Off You.
+                {/*======================== #2 ========================*/}
+                <div className={"rounded-2xl p-8 w-104"}>
+                  <div className={"flex"}>
+                    <StaticImage
+                      className={"rounded-3xl"}
+                      src="../images/blueCogs.png"
+                      alt="Logo"
+                      placeholder="blurred"
+                      layout="fixed"
+                      width={50}
+                      height={50}
+                    />
+                  </div>
+                  <div className={"mt-10 font-bold text-2xl"}>Automated Services
+
+                  </div>
+                  <div className={"mt-10"}>Never touch an email. Kick back & focus on your strengths while we drive
+                    highly
+                    profitable revenue to your business. We're good at emails, you're good at growing your business.
+                    When
+                    we
+                    work together, you become unstoppable.
+                  </div>
                 </div>
-                <div className={"mt-10"}>Entrepreneurs only have so much time in the day. Don't waste it trying to learn
-                  new skills & figuring out what works. Smart business owners delegate emails to the top dog agency for
-                  e-commerce, dropshipping & digital products.
+                {/*======================== #3 ========================*/}
+                <div className={"rounded-2xl p-8 w-104"}>
+                  <div className={"flex"}>
+                    <StaticImage
+                      className={"rounded-3xl"}
+                      src="../images/pencilRulerBlue.png"
+                      alt="Logo"
+                      placeholder="blurred"
+                      layout="fixed"
+                      width={50}
+                      height={50}
+                    />
+                  </div>
+                  <div className={"mt-10 font-bold text-2xl"}>Tailored For You Plan
+
+                  </div>
+                  <div className={"mt-10"}>Maximize profits by getting more from your customers. FB, Google & IG ads are
+                    rising everyday... We custom tailor a specific email strategy unique to your business.. Let us
+                    generate
+                    higher profits per sale & increase revenue 15-35%.
+                  </div>
                 </div>
+
               </div>
-              {/*======================== #2 ========================*/}
-              <div className={"rounded-2xl p-8 w-104"}>
-                <div className={"flex"}>
-                  <StaticImage
-                    className={"rounded-3xl"}
-                    src="../images/blueCogs.png"
-                    alt="Logo"
-                    placeholder="blurred"
-                    layout="fixed"
-                    width={50}
-                    height={50}
-                  />
-                </div>
-                <div className={"mt-10 font-bold text-2xl"}>Automated Services
 
-                </div>
-                <div className={"mt-10"}>Never touch an email. Kick back & focus on your strengths while we drive highly
-                  profitable revenue to your business. We're good at emails, you're good at growing your business. When
-                  we
-                  work together, you become unstoppable.
-                </div>
-              </div>
-              {/*======================== #3 ========================*/}
-              <div className={"rounded-2xl p-8 w-104"}>
-                <div className={"flex"}>
-                  <StaticImage
-                    className={"rounded-3xl"}
-                    src="../images/pencilRulerBlue.png"
-                    alt="Logo"
-                    placeholder="blurred"
-                    layout="fixed"
-                    width={50}
-                    height={50}
-                  />
-                </div>
-                <div className={"mt-10 font-bold text-2xl"}>Tailored For You Plan
-
-                </div>
-                <div className={"mt-10"}>Maximize profits by getting more from your customers. FB, Google & IG ads are
-                  rising everyday... We custom tailor a specific email strategy unique to your business.. Let us
-                  generate
-                  higher profits per sale & increase revenue 15-35%.
-                </div>
-              </div>
 
             </div>
-
-
-          </div>
-          <div className={"w-3/6"}>
-            <StaticImage
-              className={"rounded-3xl"}
-              src="../images/staticParallax.png"
-              alt="Logo"
-              placeholder="blurred"
-              layout="fixed"
-              width={650}
-              height={300}
-            />
-          </div>
+            <div className={"w-3/6"}>
+              <StaticImage
+                className={"rounded-3xl"}
+                src="../images/staticParallax.png"
+                alt="Logo"
+                placeholder="blurred"
+                layout="fixed"
+                width={650}
+                height={300}
+              />
+            </div>
           </div>
         </div>
         {/*  ============================SECTION==================================*/}
@@ -463,7 +499,7 @@ const IndexPage = ({ data }) => {
           <div className={"w-5/12"}>
             <div className={"flex flex-col justify-center"}>
               <h3 className={"font-bold text-5xl m-0"}>Meet The <span
-                className={"font-bold text-5xl  text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 to-blue-400"}>A-Team</span>
+                className={"font-bold text-5xl  text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-400"}>A-Team</span>
               </h3>
 
               <div className={"flex flex-wrap mt-10"}>
@@ -492,14 +528,353 @@ const IndexPage = ({ data }) => {
 
         {/*  ============================SECTION==================================*/}
 
-        <div className={"flex flex-col justify-center  text-center mt-20 "}>
+        {/*card blue and black, pricing plans*/}
+
+        <div className={"flex flex-col justify-center text-center mt-20 "}>
           <h3 className={"font-bold text-5xl m-0"}>Performance
             <span
               className={"text-transparent bg-clip-text" +
-              " bg-gradient-to-br from-indigo-600 to-blue-400"}
+              " bg-gradient-to-r from-indigo-600 to-blue-400"}
             > Pricing
           </span>
           </h3>
+          <p className={"w-1/2 mt-10 mx-auto"}>We’ll integrate our lethal flows that go through rigorous, intensive
+            split tests
+            & optimizations to convert / re-convert customers across the board.</p>
+        </div>
+
+        {/*====== CARDS GROUPED ====*/}
+        <div className={"ml-10 mt-10 flex flex-row justify-center"}>
+
+
+          {/*====== LEFT CARD =======*/}
+
+          <div className={"w-4/12 p-12 bg-gradient-to-r from-gradStart to-gradFin rounded-xl "}>
+            <div className={"flex flex-col justify-center"}>
+              <h3 className={"font-bold text-4xl m-0"}>Tiered Plans
+              </h3>
+              <div className={"divide-y-2 divide-white divide-solid"}>
+                <div className={"flex flex-wrap mt-5 pb-4"}>
+                  <p className={"text-lg font-normal opacity-60 "}>We take a monthly cut of the revenue we generate
+                    +
+                    a one time set of fee depending on your volume & size.
+                  </p>
+                </div>
+
+                <div className={"pt-4"}>
+                  <h5>Price drops as you scale:
+                  </h5>
+                </div>
+              </div>
+              <ul className={"list-none font-normal mt-3"}>
+                <li className="flex flex-row align-middle mt-2">
+                  <StaticImage
+                    src={"../images/whiteCircleTick.svg"}
+                    alt="blue_tick"
+                    placeholder="blurred"
+                    layout="fixed"
+                    width={20}
+                    height={20}
+                  />
+
+                  <div className={"ml-2 opacity-60 "}>$10k-$50k / Mo</div>
+                </li>
+                <li className="flex flex-row align-middle mt-5">
+                  <StaticImage
+                    src={"../images/whiteCircleTick.svg"}
+                    alt="blue_tick"
+                    placeholder="blurred"
+                    layout="fixed"
+                    width={20}
+                    height={20}
+                  />
+                  <div className={"ml-2 opacity-60 "}>
+                    $50k-$100k / Mo
+                  </div>
+                </li>
+                <li className="flex flex-row align-middle mt-5">
+                  <StaticImage
+                    src={"../images/whiteCircleTick.svg"}
+                    alt="blue_tick"
+                    placeholder="blurred"
+                    layout="fixed"
+                    width={20}
+                    height={20}
+                  />
+                  <div className={"ml-2 opacity-60 "}>
+                    $100k-$250k / Mo
+                  </div>
+                </li>
+                <li className="flex flex-row align-middle mt-5">
+                  <StaticImage
+                    src={"../images/whiteCircleTick.svg"}
+                    alt="blue_tick"
+                    placeholder="blurred"
+                    layout="fixed"
+                    width={20}
+                    height={20}
+                  />
+                  <div className={"ml-2 opacity-60 "}>
+                    $250k-$500k / Mo
+                  </div>
+                </li>
+                <li className="flex flex-row align-middle mt-5 ">
+                  <StaticImage
+                    className={"opacity-100"}
+                    src={"../images/whiteCircleTick.svg"}
+                    alt="blue_tick"
+                    placeholder="blurred"
+                    layout="fixed"
+                    width={20}
+                    height={20}
+                  />
+                  <div className={"ml-2 opacity-60 "}>
+                    $500k-$1M+ / Mo
+
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/*==== RIGHT CARD V===*/}
+          <div className={"w-4/12 p-12 rounded-xl bg-blueyGray ml-6"}>
+            <div className={"flex flex-col justify-center"}>
+              <h3 className={"font-bold text-4xl m-0"}>What We Do
+              </h3>
+
+              <div className={"divide-y-2 divide-white divide-solid"}>
+
+                <div className={"flex flex-wrap mt-5 pb-4"}>
+                  <p className={"text-lg font-normal opacity-60"}>
+                    Here's everything we do to earn our cut.
+                    We do the work, you make more profits, we take a small piece of the pie.</p>
+                </div>
+
+
+                <div className={"pt-4"}>
+                  <h5>Each tier is treated the same:
+                  </h5>
+                </div>
+              </div>
+
+
+              <ul className={"list-none font-normal  opacity-60 mt-3"}>
+                <li className="flex flex-row align-middle mt-5">
+                  <StaticImage
+                    src={"../images/whiteCircleTick.svg"}
+                    alt="blue_tick"
+                    placeholder="blurred"
+                    layout="fixed"
+                    width={20}
+                    height={20}
+                  />
+
+                  <div className={"ml-2 opacity-60 "}>Custom tailored set up plan</div>
+                </li>
+                <li className="flex flex-row align-middle mt-5">
+                  <StaticImage
+                    src={"../images/whiteCircleTick.svg"}
+                    alt="blue_tick"
+                    placeholder="blurred"
+                    layout="fixed"
+                    width={20}
+                    height={20}
+                  />
+                  <div className={"ml-2 opacity-60"}>Fully custom graphics</div>
+                </li>
+                <li className="flex flex-row align-middle mt-5">
+                  <StaticImage
+                    src={"../images/whiteCircleTick.svg"}
+                    alt="blue_tick"
+                    placeholder="blurred"
+                    layout="fixed"
+                    width={20}
+                    height={20}
+                  />
+                  <div className={"ml-2 opacity-60"}>Battle tested automations</div>
+                </li>
+                <li className="flex flex-row align-middle mt-5">
+                  <StaticImage
+                    src={"../images/whiteCircleTick.svg"}
+                    alt="blue_tick"
+                    placeholder="blurred"
+                    layout="fixed"
+                    width={20}
+                    height={20}
+                  />
+                  <div className={"ml-2 opacity-60"}>Weekly optimization</div>
+                </li>
+                <li className="flex flex-row align-middle mt-5">
+                  <StaticImage
+                    src={"../images/whiteCircleTick.svg"}
+                    alt="blue_tick"
+                    placeholder="blurred"
+                    layout="fixed"
+                    width={20}
+                    height={20}
+                  />
+                  <div className={"ml-2 opacity-60 "}>3-5 Campaigns / Mo</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <div className={"ml-10 mt-10 flex flex-row justify-center"}>
+          {/*======= BUTTON GROUP =======*/}
+          <div className={"mt-10 flex"}>
+            <ButtonGroup>
+              <div>
+                <Button>{"Get A Price"}</Button>
+              </div>
+              <div className={"ml-4"}><Button altStyle={true}>{"View Results"} </Button>
+              </div>
+            </ButtonGroup>
+          </div>
+        </div>
+        {/*======= SECTION =======*/}
+        {/*======= FAQ =======*/}
+        <div className={"flex flex-col max-w-screen-2xl mt-20"}>
+          <div className={"mx-auto"}>
+            <h3 className={"font-bold text-5xl m-0"}>Frequesntly Asked
+              <span
+                className={"text-transparent bg-clip-text" +
+                " bg-gradient-to-r from-indigo-600 to-blue-400"}
+              > Questions
+          </span>
+            </h3>
+          </div>
+        </div>
+
+        <div className={"flex justify-center mt-10"}>
+          <div className={"grid grid-cols-2 max-w-screen-2xl gap-6"}>{FAQ.map((fq, index) => {
+            return (
+              <div key={index} className={"rounded-2xl bg-blueyGray p-8 flex flex-row "}>
+                <div className={"w-4/6"}><h4 className={"font-bold text-2xl"}>{fq.title}</h4>
+                </div>
+                <div className={"w-2/6 flex justify-end items-end"}>
+                  <div className={""}>
+                    <button className={"bg-gradient-to-r from-gradStart to-gradFin rounded-lg font-bold py-2 px-4"}>
+                      <div className={"text-2xl"}>{">"}</div>
+                    </button>
+                  </div>
+                </div>
+
+                <div className={"mt-10 hidden"}>{fq.description}</div>
+              </div>
+            )
+          })}</div>
+        </div>
+
+        {/*======= SECTION =======*/}
+        {/*======= BLOG =======*/}
+        <div className="max-w-screen-lg mx-auto">
+        <div className={"flex justify-center flex-col mt-20"}>
+            <h3 className={"font-bold text-5xl m-0"}>Read Our
+              <span
+                className={"text-transparent bg-clip-text" +
+                " bg-gradient-to-r from-indigo-600 to-blue-400"}>  Blogs
+          </span>
+            </h3>
+
+            <div className={"flex flex-wrap mt-5 pb-4"}>
+              <p className={"w-2/4 text-lg font-normal opacity-60"}>
+                Everything from case studies to tips and tricks on how you can squeeze the most out of your traffic.
+              </p>
+              <div className="w-2/4 flex justify-end">
+                <Button altStyle={true}>
+                  {"Visit Our Blog Center"}
+                </Button>
+
+              </div>
+            </div>
+
+        </div>
+        </div>
+
+        {/*  ========= BIG CARD  =============*/}
+
+        <div className={"w-4/12 p-12 rounded-xl bg-blueyGray ml-6"}>
+          <div className={"flex flex-col justify-center"}>
+            <h3 className={"font-bold text-4xl m-0"}>What We Do
+            </h3>
+
+            <div className={"divide-y-2 divide-white divide-solid"}>
+
+              <div className={"flex flex-wrap mt-5 pb-4"}>
+                <p className={"text-lg font-normal opacity-60"}>
+                  Here's everything we do to earn our cut.
+                  We do the work, you make more profits, we take a small piece of the pie.</p>
+              </div>
+
+
+              <div className={"pt-4"}>
+                <h5>Each tier is treated the same:
+                </h5>
+              </div>
+            </div>
+
+
+            <ul className={"list-none font-normal  opacity-60 mt-3"}>
+              <li className="flex flex-row align-middle mt-5">
+                <StaticImage
+                  src={"../images/whiteCircleTick.svg"}
+                  alt="blue_tick"
+                  placeholder="blurred"
+                  layout="fixed"
+                  width={20}
+                  height={20}
+                />
+
+                <div className={"ml-2 opacity-60 "}>Custom tailored set up plan</div>
+              </li>
+              <li className="flex flex-row align-middle mt-5">
+                <StaticImage
+                  src={"../images/whiteCircleTick.svg"}
+                  alt="blue_tick"
+                  placeholder="blurred"
+                  layout="fixed"
+                  width={20}
+                  height={20}
+                />
+                <div className={"ml-2 opacity-60"}>Fully custom graphics</div>
+              </li>
+              <li className="flex flex-row align-middle mt-5">
+                <StaticImage
+                  src={"../images/whiteCircleTick.svg"}
+                  alt="blue_tick"
+                  placeholder="blurred"
+                  layout="fixed"
+                  width={20}
+                  height={20}
+                />
+                <div className={"ml-2 opacity-60"}>Battle tested automations</div>
+              </li>
+              <li className="flex flex-row align-middle mt-5">
+                <StaticImage
+                  src={"../images/whiteCircleTick.svg"}
+                  alt="blue_tick"
+                  placeholder="blurred"
+                  layout="fixed"
+                  width={20}
+                  height={20}
+                />
+                <div className={"ml-2 opacity-60"}>Weekly optimization</div>
+              </li>
+              <li className="flex flex-row align-middle mt-5">
+                <StaticImage
+                  src={"../images/whiteCircleTick.svg"}
+                  alt="blue_tick"
+                  placeholder="blurred"
+                  layout="fixed"
+                  width={20}
+                  height={20}
+                />
+                <div className={"ml-2 opacity-60 "}>3-5 Campaigns / Mo</div>
+              </li>
+            </ul>
+          </div>
         </div>
       </Layout>
     </div>

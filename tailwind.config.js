@@ -7,6 +7,7 @@ module.exports = {
         "background": "rgb(28,27,41)",
         "gradStart": "rgb(81,91,254)",
         "gradFin": "rgb(29,179,254)",
+        "blueyGray": "rgb(39,39,53)",
       },
       opacity: {
         "10": "0.1",
