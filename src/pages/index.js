@@ -78,7 +78,7 @@ const autoPilots = [{
 
 const IndexPage = ({ data }) => {
   return (
-    <div className={"bg-background text-white"}>
+    <div >
       <Seo title="Home" />
       <Layout>
 

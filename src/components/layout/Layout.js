@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
   }, [])
 
   return (
-    <>
+    <div className={"bg-background text-white"}>
       <header >
         <Nav />
       </header>
@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
       </main>
       <Footer
       />
-    </>
+    </div>
   )
 }
 

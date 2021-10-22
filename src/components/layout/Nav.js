@@ -11,10 +11,10 @@ const Nav = (props) => {
 
   const [menuOpen, setMenuOpen] = useState(false)
   const links = [
-    { linkTo: "/Home", page: "Home" },
-    { linkTo: "/About", page: "About" },
-    { linkTo: "/Pricing", page: "Pricing" },
-    { linkTo: "/Contact", page: "Contact" }]
+    { linkTo: "/", page: "Home" },
+    { linkTo: "/about", page: "About" },
+    { linkTo: "/pricing", page: "Pricing" },
+    { linkTo: "/contact", page: "Contact" }]
 
 
   UseBodyLock(menuOpen)
@@ -23,7 +23,7 @@ const Nav = (props) => {
     <>
       <nav className="hidden md:flex py-4 max-w-screen-lg mx-auto font-bold px-2 py-5">
         {/*<nav className="hidden md:flex py-4 max-w-screen-lg mx-auto font-bold">*/}
-        <Linked linkTo="/home" className="w-2/6	 text-center">
+        <Linked linkTo="/" className="w-2/6	 text-center">
           <div className={"mx-auto"}>
             <StaticImage
               src={"../../images/mailbucks_logo.png"}
@@ -36,7 +36,7 @@ const Nav = (props) => {
           </div>
         </Linked>
 
-        <NavLinks className="flex w-2/6 justify-around justify-center self-center" links={links} active={pathName} />
+        <NavLinks className="flex w-2/6  justify-center self-center" links={links} active={pathName} />
         <div className={"w-2/6 ml-6 flex justify-center"}>
           <ButtonGroup>
             <div>
