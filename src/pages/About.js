@@ -6,7 +6,12 @@ import Seo from "../components/SEO"
 import Layout from "../components/layout/Layout"
 import { autoPilots, FAQ } from "./index"
 
-
+const team = [
+  { title: "Founder & CEO", name: "Ethan Feldman", image: "../images/ethan.jpeg", icons: ["", ""] },
+  { title: "Investor & Advisor", name: "Luca Schnetzler", image: "../images/luca.jpeg", icons: ["", ""] },
+  { title: "Operations", name: "Nick Abraham", image: "../images/nick.jpeg", icons: ["", ""] },
+  { title: "Tech & Saas", name: "Sam Thompson", image: "../images/sam.jpeg", icons: ["", ""] },
+]
 const AboutPage = ({ data }) => {
   return (
     <div className={"bg-background text-white"}>
@@ -123,23 +128,23 @@ const AboutPage = ({ data }) => {
             </div>
 
 
-            <div className={"grid grid-cols-2 mt-20"}>{autoPilots.map((auto, index) => {
+            <div className={"grid grid-cols-2 gap-4 mt-20"}>{team.map((i, index) => {
               return (
                 <div key={index} className={"rounded-2xl bg-blueyGray p-8 w-96"}>
-                  <div className={"flex sm:justify-center sm:items-center"}>
+                  <div className={"flex flex-col sm:justify-center sm:items-center"}>
 
                     {/*image*/}
                     <div className={"w-full"}>
                       <StaticImage
                         className={"rounded-3xl"}
-                        src={auto.logo}
+                        src={i.logo}
                         alt="Logo"
                         placeholder="blurred"
                       />
                     </div>
+                      <h4 className={"mt-10 font-bold text-2xl"}>{i.title}</h4>
+                      <div className={"mt-10"}>{i.name}</div>
                   </div>
-                  <h4 className={"mt-10 text-center font-bold text-2xl"}>{auto.title}</h4>
-                  <div className={"mt-10"}>{auto.description}</div>
                 </div>
               )
             })}

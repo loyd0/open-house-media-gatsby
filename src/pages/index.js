@@ -875,7 +875,7 @@ const IndexPage = ({ data }) => {
                       <div className={"w-12"}>
                         <StaticImage
                           className={"rounded-full"}
-                          src={"../images/lukeLooksDepressed.jpeg"}
+                          src={"../images/luca.jpeg"}
                           alt="Luca Schnetzler"
                           placeholder="blurred"
                         />
