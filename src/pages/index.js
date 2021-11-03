@@ -4,9 +4,8 @@ import Seo from "../components/SEO"
 import { StaticImage } from "gatsby-plugin-image"
 import Button from "../components/elements/Button"
 import ButtonGroup from "../components/elements/compounds/ButtonGroup"
-// import Carousel from "../components/elements/Carousel"
 
-const FAQ = [{
+export const FAQ = [{
   title: "But isn't email marketing dead?",
   description: "Absolutely not. Email is up to 6x more likely to get clicks than a FB ad when shown to the same amount of people. " +
     "Email is an industry that grows year over year. P.s. according to Marketing Sherpa, " +
@@ -39,7 +38,7 @@ const FAQ = [{
 }]
 
 
-const autoPilots = [{
+export const autoPilots = [{
   logo: "../images/emailAuto.png",
   title: "Email Automations",
   description: "We set up and manage highly profitable branded email flows " +
@@ -87,14 +86,14 @@ const IndexPage = ({ data }) => {
         {/*top hero card*/}
 
 
-        <div className={"flex max-w-screen-lg  mx-auto mt-10 "}>
+        <div className={"flex max-w-screen-2xl  mx-auto mt-10 "}>
           {/*title*/}
           {/*left hand side card*/}
-          <div className={"flex flex-col w-3/5"}>
+          <div className={"flex flex-col w-2/5"}>
             <h3 className={"text-6xl font-bold"}>Email Marketing</h3>
             <h3 className={"text-6xl font-bold"}>For
               <span className={"text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-400"}>
-                  Ecommerce
+                   Ecommerce
                </span>
             </h3>
             {/*Description*/}
@@ -118,29 +117,27 @@ const IndexPage = ({ data }) => {
             <p className={"mt-10"}>Currently managing 57+ clients via Klaviyo</p>
 
             {/*logo*/}
-            <div className="mt-10">
+            <div className="mt-10 w-64">
+            <div className="w-full">
               <StaticImage
                 src={"../images/klavyioMaster.png"}
                 alt="klavyio Master"
                 placeholder="blurred"
-                layout="fixed"
-                width={300}
-                height={50}
               />
+            </div>
             </div>
           </div>
           {/*righ side of card*/}
-          <div className={"hidden sm:flex justify-center items-center w-2/5"}>
+          <div className={"hidden sm:flex justify-center items-center w-3/5"}>
+          <div className={"w-full w-104"}>
             {/*image*/}
             <StaticImage
               className={"rounded-3xl"}
               src={"../images/dashboard.png"}
               alt="A dinosaur"
               placeholder="blurred"
-              layout="fixed"
-              width={700}
-              height={700}
             />
+          </div>
           </div>
         </div>
 
@@ -155,7 +152,9 @@ const IndexPage = ({ data }) => {
 
         {/*  ====================== section ===========================*/}
         {/* 6 card, title, description*/}
-        <div className={"flex flex-col justify-center  text-center mt-20 "}>
+        <div className={"flex justify-center"}>
+        <div className={"max-w-screen-2xl border-b-2 border-gray-400 "}>
+        <div className={"flex flex-col justify-center text-center mt-20 "}>
           <h3 className={"font-bold text-5xl m-0"}>Profit On
             <span
               className={"text-transparent bg-clip-text" +
@@ -196,7 +195,7 @@ const IndexPage = ({ data }) => {
           </div>
 
           {/*BUTTON GROUPING */}
-          <div className={"mt-10 flex justify-center"}>
+          <div className={"mt-10 flex justify-center mb-20 "}>
             <ButtonGroup>
               <div>
                 <Button>{"Get A Price"}< /Button>
@@ -208,13 +207,13 @@ const IndexPage = ({ data }) => {
 
 
         </div>
+        </div>
+        </div>
 
         {/*  ============================NEW SECTION==================================*/}
 
         {/*TODO: fix line to be in middle, make responsive*/}
-        <div className={"max-w-screen-lg"}>
-          <div className={"border-t-2 border-gray-400 my-10"} />
-        </div>
+
         {/*  ============================SECTION==================================*/}
         {/*2 cards, last reversed*/}
         {/*LEFT CARD*/}
@@ -769,7 +768,7 @@ const IndexPage = ({ data }) => {
 
         {/*======= SECTION =======*/}
         {/*======= BLOG =======*/}
-        <div className="max-w-screen-lg mx-auto">
+        <div className="max-w-screen-lg mx-auto ">
           <div className={"flex justify-center flex-col mt-20"}>
             <h3 className={"font-bold text-5xl m-0"}>Read Our
               <span
@@ -792,108 +791,217 @@ const IndexPage = ({ data }) => {
 
           </div>
         </div>
+        {/*  ========= CARD CONTAINERS =============*/}
 
-        {/*  ========= BIG CARD  =============*/}
-        <div className="flex justify-center">
+        <div className={"flex justify-center mt-10"}>
+          <div className={"max-w-screen-xl"}>
+            {/*  ========= BIG CARD  =============*/}
 
-        <div className="w-3/4 flex">
-          <div className="w-4/6">
-            <StaticImage
-              className={"rounded-l-2xl"}
-              src={"../images/buck_palmer_surfing.png"}
-              alt="buck palmer surfing"
-              placeholder="blurred"
-              layout="fixed"
-              width="600"
-              height="500"
-            />
-          </div>
-          <div className={"w-2/6 rounded-r-2xl p-12 bg-blueyGray"}>
-            <div className={"flex flex-col justify-center"}>
-              <div className={"flex flex-row items-center flex-wrap space-x-3 mb-5"}>
-                <Button>
-                  <div className={"font-bold"}>Case Studies</div>
-                </Button>
-                {/*//date*/}
-                <div className={"opacity-60"}>Aug 12, 2021</div>
-              </div>
-              <h5 className={"font-bold text-2xl m-0"}>We More Than Doubled Buck Palmers Email Revenue In 30 Days
-              </h5>
+            <div className="flex justify-center w-full">
 
-              <div>
-
-                <div className={"flex flex-wrap mt-5 pb-4"}>
-                  <p className={"text-lg font-normal opacity-60"}>
-                    We took Buck Palmer from 15% of monthly email revenue to 33% in under 30 days. Now we're on track
-                    for
-                    50%.</p>
-                </div>
-                <div className="flex flex-row align-middle mt-5 ">
+              <div className="flex">
+                <div className="w-full h-full">
                   <StaticImage
-                    className={"rounded-full"}
-                    src={"../images/ethan.jpeg"}
-                    alt="ethan feldman"
+                    className={"rounded-l-2xl"}
+                    src={"../images/buck_palmer_surfing.png"}
+                    alt="buck palmer surfing"
                     placeholder="blurred"
-                    layout="fixed"
-                    width={50}
-                    height={50}
                   />
-                  <div className={"ml-2"}>Ethan Feldman</div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-        <div className="flex justify-center">
+                <div className={"rounded-r-2xl box-border p-6 bg-blueyGray"}>
+                  <div className={"flex flex-col justify-center"}>
+                    <div className={"flex flex-row items-center flex-wrap space-x-3 mb-5"}>
+                      <Button>
+                        <div className={"font-bold"}>Case Studies</div>
+                      </Button>
+                      {/*//date*/}
+                      <div className={"opacity-60"}>Aug 12, 2021</div>
+                    </div>
+                    <h5 className={"font-bold text-2xl m-0"}>We More Than Doubled Buck Palmers Email Revenue In 30 Days
+                    </h5>
 
-          <div className="flex flex-col w-168">
-            <StaticImage
-              className={"rounded-t-2xl w-168"}
-              src={"../images/people_around_table_office.png"}
-              alt="people around table in an office"
-              placeholder="blurred"
-              layout="fixed"
-            />
-            <div className={"rounded-b-2xl p-12 bg-blueyGray"}>
+                    <div>
 
-              <div className={"flex flex-col justify-center"}>
-                <div className={"flex flex-row items-center flex-wrap space-x-3 mb-5"}>
-                  <Button>
-                    <div className={"font-bold"}>Case Studies</div>
-                  </Button>
-                  {/*//date*/}
-                  <div className={"opacity-60"}>Aug 12, 2021</div>
-                </div>
-                <h5 className={"font-bold text-2xl m-0"}>We More Than Doubled Buck Palmers Email Revenue In 30 Days
-                </h5>
-
-                <div>
-
-                  <div className={"flex flex-wrap mt-5 pb-4"}>
-                    <p className={"text-lg font-normal opacity-60"}>
-                      We took Buck Palmer from 15% of monthly email revenue to 33% in under 30 days. Now we're on track
-                      for
-                      50%.</p>
-                  </div>
-                  <div className="flex flex-row align-middle mt-5 ">
-                    <StaticImage
-                      className={"rounded-full"}
-                      src={"../images/ethan.jpeg"}
-                      alt="ethan feldman"
-                      placeholder="blurred"
-                      layout="fixed"
-                      width={50}
-                      height={50}
-                    />
-                    <div className={"ml-2"}>Ethan Feldman</div>
+                      <div className={"flex flex-wrap box-border mt-5 pb-4"}>
+                        <p className={"text-lg font-normal opacity-60"}>
+                          We took Buck Palmer from 15% of monthly email revenue to 33% in under 30 days. Now we're on
+                          track
+                          for
+                          50%.</p>
+                      </div>
+                      <div className="flex flex-row align-middle mt-5 ">
+                        <StaticImage
+                          className={"rounded-full"}
+                          src={"../images/ethan.jpeg"}
+                          alt="ethan feldman"
+                          placeholder="blurred"
+                          layout="fixed"
+                          width={50}
+                          height={50}
+                        />
+                        <div className={"ml-2"}>Ethan Feldman</div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+            {/*  ========= 3 SMALL CARDS  =============*/}
+            {/*all cards*/}
+            <div className="flex justify-center space-x-3">
+              {/*card 2*/}
+              <div className="flex flex-col  box-border mt-10">
+                {/*card top image*/}
+                <div className={"w-full"}>
+                  <StaticImage
+                    className={"rounded-t-2xl"}
+                    src={"../images/people_around_table_office.png"}
+                    alt="people around table in an office"
+                    placeholder="blurred"
+                  />
+                </div>
+                {/*card header*/}
+                <div className={"rounded-b-2xl bg-blueyGray"}>
+                  <div className={"flex flex-col justify-center pt-6 px-6"}>
+                    <h5 className={"font-bold text-2xl m-0"}>In House Vs Outsourced Email Marketing Team
+                    </h5>
+                    <div className={"flex flex-wrap mt-5 pb-4"}>
+                      <p className={"text-lg font-normal opacity-60"}>
+                        Everything you need to know about In-House Vs. Outsourced Email Marketing. Read this blog to
+                        find out what's best for your situation.</p>
+                    </div>
+                    {/*card footer*/}
+                    <div className="flex flex-row justify-between align-middle mt-5 border-t border-gray-400	p-6">
+                      <div className={"w-12"}>
+                        <StaticImage
+                          className={"rounded-full"}
+                          src={"../images/lukeLooksDepressed.jpeg"}
+                          alt="Luca Schnetzler"
+                          placeholder="blurred"
+                        />
+                      </div>
+
+                      <div className="flex flex-col">
+                        <div className={"ml-2"}>Luca Schnetzler</div>
+                        <div className={"opacity-60"}>Aug 12, 2021</div>
+                      </div>
+
+                      <button onClick={() => {
+                      }}
+                              className={`leading-none font-bold text-sm bg-gradient-to-r from-gradStart to-gradFin rounded-lg text-bold py-2 px-4`}>
+                        Tactics
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/*card 2*/}
+              <div className="flex flex-col box-border mt-10">
+                {/*card top image*/}
+                <div className={"w-full"}>
+                  <StaticImage
+                    className={"rounded-t-2xl"}
+                    src={"../images/people_around_table_office.png"}
+                    alt="people around table in an office"
+                    placeholder="blurred"
+                  />
+                </div>
+                {/*card header*/}
+                <div className={"rounded-b-2xl bg-blueyGray"}>
+                  <div className={"flex flex-col justify-center pt-6 px-6"}>
+                    <h5 className={"font-bold text-2xl m-0"}>The quickest way to grow your brands email list
+                    </h5>
+                    <div className={"flex flex-wrap mt-5 pb-4"}>
+                      <p className={"text-lg font-normal opacity-60"}>
+                        Your email list is a vital source of predictable and consistent revenue. It's best you learn how
+                        to grow it quickly and start right away.</p>
+                    </div>
+                  </div>
+                  {/*card footer*/}
+                  <div className="flex flex-row justify-between align-middle mt-5 border-t border-gray-400	p-6">
+                    <div className={"w-12"}>
+                      <StaticImage
+                        className={"rounded-full"}
+                        src={"../images/ethan.jpeg"}
+                        alt="ethan feldman"
+                        placeholder="blurred"
+                      />
+                    </div>
+
+                    <div className="flex flex-col">
+                      <div className={"ml-2"}>Ethan Feldman</div>
+                      <div className={"opacity-60"}>Aug 12, 2021</div>
+                    </div>
+
+                    <button onClick={() => {
+                    }}
+                            className={`leading-none font-bold text-sm bg-gradient-to-r from-gradStart to-gradFin rounded-lg text-bold py-2 px-4`}>
+                      Tactics
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+
+
+              {/*card 3*/}
+              <div className="flex flex-col  box-border mt-10">
+                {/*card top image*/}
+                <div className={"w-full"}>
+                  <StaticImage
+                    className={"rounded-t-2xl"}
+                    src={"../images/people_around_table_office.png"}
+                    alt="people around table in an office"
+                    placeholder="blurred"
+                  />
+                </div>
+                <div className={"rounded-b-2xl bg-blueyGray"}>
+                  {/*card header*/}
+                  <div className={"flex flex-col justify-center pt-6 px-6"}>
+
+                    <h5 className={"font-bold text-2xl m-0"}>The Best Practices For Skyrocketing Your Open Rates
+                    </h5>
+
+                    <div>
+
+                      <div className={"flex flex-wrap mt-5 pb-4"}>
+                        <p className={"text-lg font-normal opacity-60"}>
+                          Email is a great channel for driving revenue given you can actually get people to open them.
+                          ￼.</p>
+                      </div>
+
+
+                    </div>
+                  </div>
+                  {/*card footer*/}
+                  <div className="flex flex-row justify-between align-middle mt-5 border-t border-gray-400	p-6">
+                    <div className={"w-12"}>
+                      <StaticImage
+                        className={"rounded-full"}
+                        src={"../images/ethan.jpeg"}
+                        alt="ethan feldman"
+                        placeholder="blurred"
+                      />
+                    </div>
+
+                    <div className="flex flex-col">
+                      <div className={"ml-2"}>Ethan Feldman</div>
+                      <div className={"opacity-60"}>Aug 12, 2021</div>
+                    </div>
+
+                    <button onClick={() => {
+                    }}
+                            className={`leading-none font-bold text-sm bg-gradient-to-r from-gradStart to-gradFin rounded-lg text-bold py-2 px-4`}>
+                      Tactics
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
           </div>
         </div>
-
       </Layout>
     </div>
   )
