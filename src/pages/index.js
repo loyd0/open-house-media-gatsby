@@ -770,7 +770,7 @@ const IndexPage = ({ data }) => {
         {/*======= SECTION =======*/}
         {/*======= BLOG =======*/}
         <div className="max-w-screen-lg mx-auto">
-        <div className={"flex justify-center flex-col mt-20"}>
+          <div className={"flex justify-center flex-col mt-20"}>
             <h3 className={"font-bold text-5xl m-0"}>Read Our
               <span
                 className={"text-transparent bg-clip-text" +
@@ -790,92 +790,110 @@ const IndexPage = ({ data }) => {
               </div>
             </div>
 
-        </div>
+          </div>
         </div>
 
         {/*  ========= BIG CARD  =============*/}
+        <div className="flex justify-center">
 
-        <div className={"w-4/12 p-12 rounded-xl bg-blueyGray ml-6"}>
-          <div className={"flex flex-col justify-center"}>
-            <h3 className={"font-bold text-4xl m-0"}>What We Do
-            </h3>
-
-            <div className={"divide-y-2 divide-white divide-solid"}>
-
-              <div className={"flex flex-wrap mt-5 pb-4"}>
-                <p className={"text-lg font-normal opacity-60"}>
-                  Here's everything we do to earn our cut.
-                  We do the work, you make more profits, we take a small piece of the pie.</p>
+        <div className="w-3/4 flex">
+          <div className="w-4/6">
+            <StaticImage
+              className={"rounded-l-2xl"}
+              src={"../images/buck_palmer_surfing.png"}
+              alt="buck palmer surfing"
+              placeholder="blurred"
+              layout="fixed"
+              width="600"
+              height="500"
+            />
+          </div>
+          <div className={"w-2/6 rounded-r-2xl p-12 bg-blueyGray"}>
+            <div className={"flex flex-col justify-center"}>
+              <div className={"flex flex-row items-center flex-wrap space-x-3 mb-5"}>
+                <Button>
+                  <div className={"font-bold"}>Case Studies</div>
+                </Button>
+                {/*//date*/}
+                <div className={"opacity-60"}>Aug 12, 2021</div>
               </div>
+              <h5 className={"font-bold text-2xl m-0"}>We More Than Doubled Buck Palmers Email Revenue In 30 Days
+              </h5>
 
+              <div>
 
-              <div className={"pt-4"}>
-                <h5>Each tier is treated the same:
-                </h5>
+                <div className={"flex flex-wrap mt-5 pb-4"}>
+                  <p className={"text-lg font-normal opacity-60"}>
+                    We took Buck Palmer from 15% of monthly email revenue to 33% in under 30 days. Now we're on track
+                    for
+                    50%.</p>
+                </div>
+                <div className="flex flex-row align-middle mt-5 ">
+                  <StaticImage
+                    className={"rounded-full"}
+                    src={"../images/ethan.jpeg"}
+                    alt="ethan feldman"
+                    placeholder="blurred"
+                    layout="fixed"
+                    width={50}
+                    height={50}
+                  />
+                  <div className={"ml-2"}>Ethan Feldman</div>
+                </div>
               </div>
             </div>
-
-
-            <ul className={"list-none font-normal  opacity-60 mt-3"}>
-              <li className="flex flex-row align-middle mt-5">
-                <StaticImage
-                  src={"../images/whiteCircleTick.svg"}
-                  alt="blue_tick"
-                  placeholder="blurred"
-                  layout="fixed"
-                  width={20}
-                  height={20}
-                />
-
-                <div className={"ml-2 opacity-60 "}>Custom tailored set up plan</div>
-              </li>
-              <li className="flex flex-row align-middle mt-5">
-                <StaticImage
-                  src={"../images/whiteCircleTick.svg"}
-                  alt="blue_tick"
-                  placeholder="blurred"
-                  layout="fixed"
-                  width={20}
-                  height={20}
-                />
-                <div className={"ml-2 opacity-60"}>Fully custom graphics</div>
-              </li>
-              <li className="flex flex-row align-middle mt-5">
-                <StaticImage
-                  src={"../images/whiteCircleTick.svg"}
-                  alt="blue_tick"
-                  placeholder="blurred"
-                  layout="fixed"
-                  width={20}
-                  height={20}
-                />
-                <div className={"ml-2 opacity-60"}>Battle tested automations</div>
-              </li>
-              <li className="flex flex-row align-middle mt-5">
-                <StaticImage
-                  src={"../images/whiteCircleTick.svg"}
-                  alt="blue_tick"
-                  placeholder="blurred"
-                  layout="fixed"
-                  width={20}
-                  height={20}
-                />
-                <div className={"ml-2 opacity-60"}>Weekly optimization</div>
-              </li>
-              <li className="flex flex-row align-middle mt-5">
-                <StaticImage
-                  src={"../images/whiteCircleTick.svg"}
-                  alt="blue_tick"
-                  placeholder="blurred"
-                  layout="fixed"
-                  width={20}
-                  height={20}
-                />
-                <div className={"ml-2 opacity-60 "}>3-5 Campaigns / Mo</div>
-              </li>
-            </ul>
           </div>
         </div>
+        </div>
+        <div className="flex justify-center">
+
+          <div className="flex flex-col w-168">
+            <StaticImage
+              className={"rounded-t-2xl w-168"}
+              src={"../images/people_around_table_office.png"}
+              alt="people around table in an office"
+              placeholder="blurred"
+              layout="fixed"
+            />
+            <div className={"rounded-b-2xl p-12 bg-blueyGray"}>
+
+              <div className={"flex flex-col justify-center"}>
+                <div className={"flex flex-row items-center flex-wrap space-x-3 mb-5"}>
+                  <Button>
+                    <div className={"font-bold"}>Case Studies</div>
+                  </Button>
+                  {/*//date*/}
+                  <div className={"opacity-60"}>Aug 12, 2021</div>
+                </div>
+                <h5 className={"font-bold text-2xl m-0"}>We More Than Doubled Buck Palmers Email Revenue In 30 Days
+                </h5>
+
+                <div>
+
+                  <div className={"flex flex-wrap mt-5 pb-4"}>
+                    <p className={"text-lg font-normal opacity-60"}>
+                      We took Buck Palmer from 15% of monthly email revenue to 33% in under 30 days. Now we're on track
+                      for
+                      50%.</p>
+                  </div>
+                  <div className="flex flex-row align-middle mt-5 ">
+                    <StaticImage
+                      className={"rounded-full"}
+                      src={"../images/ethan.jpeg"}
+                      alt="ethan feldman"
+                      placeholder="blurred"
+                      layout="fixed"
+                      width={50}
+                      height={50}
+                    />
+                    <div className={"ml-2"}>Ethan Feldman</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </Layout>
     </div>
   )
