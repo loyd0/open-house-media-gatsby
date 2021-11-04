@@ -21,18 +21,16 @@ const Nav = (props) => {
 
   return (
     <>
-      <nav className="hidden md:flex py-4 max-w-screen-lg mx-auto font-bold px-2 py-5">
-        {/*<nav className="hidden md:flex py-4 max-w-screen-lg mx-auto font-bold">*/}
-        <Linked linkTo="/" className="w-2/6	 text-center">
-          <div className={"mx-auto"}>
+      <nav className="hidden md:flex py-4 max-w-screen-2xl mx-auto font-bold px-2 py-5">
+        <Linked linkTo="/" className="w-2/6">
+          <div className={"w-48"}>
+          <div className={"w-full"}>
             <StaticImage
               src={"../../images/mailbucks_logo.png"}
               alt="Mailbucks logo"
               placeholder="blurred"
-              layout="fixed"
-              height={50}
-              width={100}
             />
+          </div>
           </div>
         </Linked>
 
