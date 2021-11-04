@@ -31,9 +31,9 @@ const ContactPage = ({ data }) => {
             <h3 className={"font-bold text-5xl m-0"}>Frequesntly Asked
               <span
                 className={"text-transparent bg-clip-text" +
-                " bg-gradient-to-r from-indigo-600 to-blue-400"}
+                  " bg-gradient-to-r from-indigo-600 to-blue-400"}
               > Questions
-          </span>
+              </span>
             </h3>
           </div>
         </div>

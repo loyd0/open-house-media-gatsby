@@ -17,6 +17,7 @@ const AboutPage = ({ data }) => {
     <div className={"bg-background text-white"}>
       <Seo title="Home" />
       <Layout>
+
         {/*======= SECTION =======*/}
         {/*======= TOP COMPONENT =======*/}
         <div className="flex justify-center">
@@ -24,9 +25,9 @@ const AboutPage = ({ data }) => {
             <h3 className={"font-bold text-5xl m-0"}>We're Here To Accompany
               <span
                 className={"text-transparent bg-clip-text" +
-                " bg-gradient-to-r from-indigo-600 to-blue-400"}
+                  " bg-gradient-to-r from-indigo-600 to-blue-400"}
               > Your Growth
-            </span>
+              </span>
             </h3>
             <p className={"text-lg font-normal opacity-60"}>
               We're here, right by your side to help you grow, scale and automate your business. We want you to focus on
@@ -47,16 +48,15 @@ const AboutPage = ({ data }) => {
           </div>
         </div>
 
-
         {/*  ====================== section ===========================*/}
         {/* 6 card, title, description*/}
         <div className={"flex flex-col justify-center  text-center mt-20 "}>
           <h3 className={"font-bold text-5xl m-0"}>Our Company
             <span
               className={"text-transparent bg-clip-text" +
-              " bg-gradient-to-r from-indigo-600 to-blue-400"}
+                " bg-gradient-to-r from-indigo-600 to-blue-400"}
             > Values
-          </span>
+            </span>
           </h3>
           <div className={" text-center flex justify-center flex-wrap mt-10"}>
             <p className={"w-1/3"}>We strive to be the best, we never settle for less and thats why we're the industry
@@ -92,7 +92,7 @@ const AboutPage = ({ data }) => {
           <div className={"mt-10 flex justify-center"}>
             <ButtonGroup>
               <div>
-                <Button>{"Get A Price"}< /Button>
+                <Button>{"Get A Price"}</Button>
               </div>
               <div className={"ml-4"}><Button altStyle={true}>{"View Results"} </Button>
               </div>
@@ -135,15 +135,15 @@ const AboutPage = ({ data }) => {
 
                     {/*image*/}
                     <div className={"w-full"}>
-                      <StaticImage
+                      <img
                         className={"rounded-3xl"}
                         src={i.logo}
                         alt="Logo"
                         placeholder="blurred"
                       />
                     </div>
-                      <h4 className={"mt-10 font-bold text-2xl"}>{i.title}</h4>
-                      <div className={"mt-10"}>{i.name}</div>
+                    <h4 className={"mt-10 font-bold text-2xl"}>{i.title}</h4>
+                    <div className={"mt-10"}>{i.name}</div>
                   </div>
                 </div>
               )

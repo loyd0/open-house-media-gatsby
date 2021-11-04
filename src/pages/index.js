@@ -93,8 +93,8 @@ const IndexPage = ({ data }) => {
             <h3 className={"text-6xl font-bold"}>Email Marketing</h3>
             <h3 className={"text-6xl font-bold"}>For
               <span className={"text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-400"}>
-                   Ecommerce
-               </span>
+                Ecommerce
+              </span>
             </h3>
             {/*Description*/}
             <p>Our agency helps ecommerce & info product businesses produce
@@ -118,26 +118,26 @@ const IndexPage = ({ data }) => {
 
             {/*logo*/}
             <div className="mt-10 w-64">
-            <div className="w-full">
-              <StaticImage
-                src={"../images/klavyioMaster.png"}
-                alt="klavyio Master"
-                placeholder="blurred"
-              />
-            </div>
+              <div className="w-full">
+                <StaticImage
+                  src={"../images/klavyioMaster.png"}
+                  alt="klavyio Master"
+                  placeholder="blurred"
+                />
+              </div>
             </div>
           </div>
           {/*righ side of card*/}
           <div className={"hidden sm:flex justify-center items-center w-3/5"}>
-          <div className={"w-full w-104"}>
-            {/*image*/}
-            <StaticImage
-              className={"rounded-3xl"}
-              src={"../images/dashboard.png"}
-              alt="A dinosaur"
-              placeholder="blurred"
-            />
-          </div>
+            <div className={"w-full w-104"}>
+              {/*image*/}
+              <StaticImage
+                className={"rounded-3xl"}
+                src={"../images/dashboard.png"}
+                alt="A dinosaur"
+                placeholder="blurred"
+              />
+            </div>
           </div>
         </div>
 
@@ -153,61 +153,61 @@ const IndexPage = ({ data }) => {
         {/*  ====================== section ===========================*/}
         {/* 6 card, title, description*/}
         <div className={"flex justify-center"}>
-        <div className={"max-w-screen-2xl border-b-2 border-gray-400 "}>
-        <div className={"flex flex-col justify-center text-center mt-20 "}>
-          <h3 className={"font-bold text-5xl m-0"}>Profit On
-            <span
-              className={"text-transparent bg-clip-text" +
-              " bg-gradient-to-r from-indigo-600 to-blue-400"}
-            > Autopilot
-          </span>
-          </h3>
-          <div className={" text-center flex justify-center flex-wrap mt-10"}>
-            <p className={"w-1/3"}>Emails aren't sexy but they generate massive profits for our clients and we're here
-              to take them off your
-              hands. Spend your time doing what you're good at and let us handle all of the boring tasks below.</p>
-          </div>
-          <div className={"flex justify-center mt-10"}>
-            <div className={"grid grid-cols-3 max-w-screen-2xl gap-4"}>{autoPilots.map((auto, index) => {
-              console.log({ auto })
-              return (
-                <div key={index} className={"rounded-2xl bg-blueyGray p-8 w-96"}>
-                  <div className={"flex sm:justify-center sm:items-center"}>
-                    {/*image*/}
+          <div className={"max-w-screen-2xl border-b-2 border-gray-400 "}>
+            <div className={"flex flex-col justify-center text-center mt-20 "}>
+              <h3 className={"font-bold text-5xl m-0"}>Profit On
+                <span
+                  className={"text-transparent bg-clip-text" +
+                    " bg-gradient-to-r from-indigo-600 to-blue-400"}
+                > Autopilot
+                </span>
+              </h3>
+              <div className={" text-center flex justify-center flex-wrap mt-10"}>
+                <p className={"w-1/3"}>Emails aren't sexy but they generate massive profits for our clients and we're here
+                  to take them off your
+                  hands. Spend your time doing what you're good at and let us handle all of the boring tasks below.</p>
+              </div>
+              <div className={"flex justify-center mt-10"}>
+                <div className={"grid grid-cols-3 max-w-screen-2xl gap-4"}>{autoPilots.map((auto, index) => {
+                  console.log({ auto })
+                  return (
+                    <div key={index} className={"rounded-2xl bg-blueyGray p-8 w-96"}>
+                      <div className={"flex sm:justify-center sm:items-center"}>
+                        {/*image*/}
 
-                    <StaticImage
-                      className={"rounded-3xl"}
-                      src={auto.logo}
-                      alt="Logo"
-                      placeholder="blurred"
-                      layout="fixed"
-                      width={200}
-                      height={200}
-                    />
+                        <StaticImage
+                          className={"rounded-3xl"}
+                          src={auto.logo}
+                          alt="Logo"
+                          placeholder="blurred"
+                          layout="fixed"
+                          width={200}
+                          height={200}
+                        />
+                      </div>
+                      <h4 className={"mt-10 text-center font-bold text-2xl "}>{auto.title}</h4>
+                      <div className={"mt-10"}>{auto.description}</div>
+                    </div>
+                  )
+                })}</div>
+
+
+              </div>
+
+              {/*BUTTON GROUPING */}
+              <div className={"mt-10 flex justify-center mb-20 "}>
+                <ButtonGroup>
+                  <div>
+                    <Button>{"Get A Price"}</Button>
                   </div>
-                  <h4 className={"mt-10 text-center font-bold text-2xl "}>{auto.title}</h4>
-                  <div className={"mt-10"}>{auto.description}</div>
-                </div>
-              )
-            })}</div>
-
-
-          </div>
-
-          {/*BUTTON GROUPING */}
-          <div className={"mt-10 flex justify-center mb-20 "}>
-            <ButtonGroup>
-              <div>
-                <Button>{"Get A Price"}< /Button>
+                  <div className={"ml-4"}><Button altStyle={true}>{"View Results"} </Button>
+                  </div>
+                </ButtonGroup>
               </div>
-              <div className={"ml-4"}><Button altStyle={true}>{"View Results"} </Button>
-              </div>
-            </ButtonGroup>
+
+
+            </div>
           </div>
-
-
-        </div>
-        </div>
         </div>
 
         {/*  ============================NEW SECTION==================================*/}
@@ -395,9 +395,9 @@ const IndexPage = ({ data }) => {
           <h3 className={"font-bold text-5xl m-0"}>The
             <span
               className={"text-transparent bg-clip-text" +
-              " bg-gradient-to-r from-indigo-600 to-blue-400"}
+                " bg-gradient-to-r from-indigo-600 to-blue-400"}
             > Industry Leaders
-          </span>
+            </span>
           </h3>
         </div>
         <div className={"flex justify-center  mt-10 "}>
@@ -533,9 +533,9 @@ const IndexPage = ({ data }) => {
           <h3 className={"font-bold text-5xl m-0"}>Performance
             <span
               className={"text-transparent bg-clip-text" +
-              " bg-gradient-to-r from-indigo-600 to-blue-400"}
+                " bg-gradient-to-r from-indigo-600 to-blue-400"}
             > Pricing
-          </span>
+            </span>
           </h3>
           <p className={"w-1/2 mt-10 mx-auto"}>We’ll integrate our lethal flows that go through rigorous, intensive
             split tests
@@ -739,9 +739,9 @@ const IndexPage = ({ data }) => {
             <h3 className={"font-bold text-5xl m-0"}>Frequesntly Asked
               <span
                 className={"text-transparent bg-clip-text" +
-                " bg-gradient-to-r from-indigo-600 to-blue-400"}
+                  " bg-gradient-to-r from-indigo-600 to-blue-400"}
               > Questions
-          </span>
+              </span>
             </h3>
           </div>
         </div>
@@ -773,8 +773,8 @@ const IndexPage = ({ data }) => {
             <h3 className={"font-bold text-5xl m-0"}>Read Our
               <span
                 className={"text-transparent bg-clip-text" +
-                " bg-gradient-to-r from-indigo-600 to-blue-400"}>  Blogs
-          </span>
+                  " bg-gradient-to-r from-indigo-600 to-blue-400"}>  Blogs
+              </span>
             </h3>
 
             <div className={"flex flex-wrap mt-5 pb-4"}>
@@ -888,7 +888,7 @@ const IndexPage = ({ data }) => {
 
                       <button onClick={() => {
                       }}
-                              className={`leading-none font-bold text-sm bg-gradient-to-r from-gradStart to-gradFin rounded-lg text-bold py-2 px-4`}>
+                        className={`leading-none font-bold text-sm bg-gradient-to-r from-gradStart to-gradFin rounded-lg text-bold py-2 px-4`}>
                         Tactics
                       </button>
                     </div>
@@ -935,7 +935,7 @@ const IndexPage = ({ data }) => {
 
                     <button onClick={() => {
                     }}
-                            className={`leading-none font-bold text-sm bg-gradient-to-r from-gradStart to-gradFin rounded-lg text-bold py-2 px-4`}>
+                      className={`leading-none font-bold text-sm bg-gradient-to-r from-gradStart to-gradFin rounded-lg text-bold py-2 px-4`}>
                       Tactics
                     </button>
                   </div>
@@ -991,7 +991,7 @@ const IndexPage = ({ data }) => {
 
                     <button onClick={() => {
                     }}
-                            className={`leading-none font-bold text-sm bg-gradient-to-r from-gradStart to-gradFin rounded-lg text-bold py-2 px-4`}>
+                      className={`leading-none font-bold text-sm bg-gradient-to-r from-gradStart to-gradFin rounded-lg text-bold py-2 px-4`}>
                       Tactics
                     </button>
                   </div>

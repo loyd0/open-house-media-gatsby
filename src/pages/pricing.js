@@ -20,9 +20,9 @@ const PricingPage = ({ data }) => {
           <h3 className={"font-bold text-5xl m-0"}>Performance
             <span
               className={"text-transparent bg-clip-text" +
-              " bg-gradient-to-r from-indigo-600 to-blue-400"}
+                " bg-gradient-to-r from-indigo-600 to-blue-400"}
             > Pricing
-          </span>
+            </span>
           </h3>
           <p className={"w-1/2 mt-10 mx-auto"}>We’ll integrate our lethal flows that go through rigorous, intensive
             split tests
@@ -228,9 +228,9 @@ const PricingPage = ({ data }) => {
             <h3 className={"font-bold text-5xl m-0"}>Frequesntly Asked
               <span
                 className={"text-transparent bg-clip-text" +
-                " bg-gradient-to-r from-indigo-600 to-blue-400"}
+                  " bg-gradient-to-r from-indigo-600 to-blue-400"}
               > Questions
-          </span>
+              </span>
             </h3>
           </div>
         </div>
